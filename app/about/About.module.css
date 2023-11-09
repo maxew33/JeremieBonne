@@ -1,0 +1,58 @@
+.about {
+  max-width: 1600px;
+  padding: 0 7.5vw;
+  margin-top: 2rem;
+}
+
+.aboutContainer {
+  display: flex;
+  gap: 2.5vw;
+}
+
+.image {
+  width: 33vw;
+  height: 33vw;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.aboutContent {
+  font-family: var(--font-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutContent > p {
+  font-size: clamp(14px, 1.25vw, 24px);
+  line-height: clamp(20px, 1.75vw, 32px);
+}
+
+.aboutHook {
+  color: var(--green);
+  font-size: clamp(18px, 1.75vw, 30px);
+  line-height: clamp(24px, 2.3vw, 40px);
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    max-width: 1600px;
+    padding: 0 7.5vw;
+  }
+  .about .about-container {
+    flex-direction: column;
+  }
+  .about .about-container .img-container {
+    width: 100%;
+    height: 50vw;
+    aspect-ratio: unset;
+  }
+  .about .about-container .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .about .about-container .about-content > * {
+    padding: 0.5rem 0;
+  }
+}

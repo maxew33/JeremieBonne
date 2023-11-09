@@ -1,0 +1,52 @@
+.header {
+  margin: clamp(26px, 2.6vw, 58px) auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(26px, 2.6vw, 58px);
+}
+
+.logo {
+  width: clamp(250px, 25vw, 556px);
+}
+
+.baseline {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: clamp(2px, 0.2vw, 3.5px);
+  transform: translateY(clamp(-9px, -0.85vw, -14px));
+}
+.baseline span {
+  display: inline-flex;
+  font-size: clamp(7px, 0.85vw, 14px);
+  font-family: var(--font-2);
+  align-items: center;
+}
+.baseline span:not(:nth-child(1))::before {
+  content: "";
+  display: inline-block;
+  height: clamp(4px, 0.4vw, 7px);
+  aspect-ratio: 1;
+  background: #000;
+  border-radius: 50%;
+  margin: 0 clamp(7px, 0.85vw, 14px);
+}
+
+.navigation {
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--font-1);
+  font-size: clamp(10px, 1vw, 16px);
+  display: flex;
+  gap: clamp(26px, 2.6vw, 58px);
+  font-weight: 500;
+  letter-spacing: clamp(0.3px, 0.3vw, 0.5px);
+}
+.navigation a {
+  color: rgb(56, 56, 56);
+}
+.navigation a.active {
+  color: black;
+}

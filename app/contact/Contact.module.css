@@ -1,0 +1,30 @@
+.contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contact * {
+  font-family: var(--font-2);
+}
+.contact p {
+  padding: 1rem 0 4rem;
+  font-size: clamp(14px, 1.25vw, 24px);
+  line-height: clamp(20px, 1.75vw, 32px);
+}
+.contact a {
+  display: inline-block;
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+.hook {
+  color: var(--green);
+  font-size: clamp(20px, 2vw, 32px);
+}
+
+.contactWay {
+  font-size: clamp(14px, 1.25vw, 24px);
+}
